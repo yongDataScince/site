@@ -39,6 +39,16 @@
     }
 }
 
+@media (max-width: 380px) {
+    .main__block-stake-block--input-gr {
+        flex-direction: column;
+    }
+
+    .main__block-stake-block--input-gr input {
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 1024px) {
     .main__block  {
         padding: 20px;
