@@ -133,6 +133,72 @@ export const Body = () => {
                             Get Reward
                         </button>
                     </div>
+                    <div className="main__block-portfolio-block">
+                        <div className="block-info main__block-portfolio-block--stake-info">
+                            <p className="main__block-portfolio-block--stake-info-title">Stake Amount / Duration</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                1500 KOMO / 90 days
+                            </p>
+                        </div>
+
+                        <div className="block-info main__block-portfolio-block--remaining-info">
+                            <p className="main__block-portfolio-block--stake-info-title">Remaining</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                26 days
+                            </p>
+                        </div>
+
+                        <div className="block-info main__block-portfolio-block--apy-info">
+                            <p className="main__block-portfolio-block--stake-info-title">APY</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                50%
+                            </p>
+                        </div>
+
+                        <div className="block-info main__block-portfolio-block--reward-info">
+                            <p className="main__block-portfolio-block--stake-info-title">Reward</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                +120.75 KOMO
+                            </p>
+                        </div>
+
+                        <button className="btn get-reward-btn">
+                            Get Reward
+                        </button>
+                    </div>
+                    <div className="main__block-portfolio-block">
+                        <div className="block-info main__block-portfolio-block--stake-info">
+                            <p className="main__block-portfolio-block--stake-info-title">Stake Amount / Duration</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                1500 KOMO / 365 days
+                            </p>
+                        </div>
+
+                        <div className="block-info main__block-portfolio-block--remaining-info">
+                            <p className="main__block-portfolio-block--stake-info-title">Remaining</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                342 days
+                            </p>
+                        </div>
+
+                        <div className="block-info main__block-portfolio-block--apy-info">
+                            <p className="main__block-portfolio-block--stake-info-title">APY</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                50%
+                            </p>
+                        </div>
+
+                        <div className="block-info main__block-portfolio-block--reward-info">
+                            <p className="main__block-portfolio-block--stake-info-title">Reward</p>
+                            <p className="main__block-portfolio-block--stake-info-data">
+                                +10.75 KOMO
+                            </p>
+                        </div>
+
+                        <button className="btn get-reward-btn">
+                            Get Reward
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
