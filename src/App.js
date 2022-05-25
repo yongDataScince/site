@@ -3,13 +3,17 @@ import { Header } from './components/Header/Header';
 import { Body } from './components/Body/Body';
 import { Footer } from './components/Footer/Footer';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function App() {
   const navigate = useNavigate()
+  const location = useLocation()
+
   useEffect(() => {
-    navigate("/staking")
-  }, [])
+    if (location.pathname !== "/staking" && location.pathname !== "/staking") {
+      navigate("/staking")
+    }
+  }, [location])
   return (
     <div className="App">
       <Header />
