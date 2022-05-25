@@ -48,6 +48,7 @@ export function useOnClickOutside(ref, handler) {
 root.render(
   <React.StrictMode>
     <Router>
+      <App />
       <Routes>
         <Route path='/nftstaking' element={<App />} />
         <Route path='/staking' element={<App />} />

@@ -8,12 +8,10 @@ import { useNavigate, useLocation } from 'react-router-dom';
 function App() {
   const navigate = useNavigate()
   const location = useLocation()
-
   useEffect(() => {
-    if (location.pathname !== "/staking" && location.pathname !== "/staking") {
-      navigate("/staking")
-    }
-  }, [location])
+    navigate("/staking")
+  }, [])
+
   return (
     <div className="App">
       <Header />
