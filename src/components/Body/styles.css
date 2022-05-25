@@ -261,6 +261,20 @@
     margin-left: 33px;
 }
 
+@media (max-width: 600px) {
+    .main__block-portfolio-block--remaining-info {
+        margin-left: 0px;
+    }
+    
+    .main__block-portfolio-block--apy-info {
+        margin-left: 0px;
+    }
+    
+    .main__block-portfolio-block--reward-info {
+        margin-left: 0px;
+    }
+}
+
 .get-reward-btn {
     padding: 10px 25px 14px 34px;
     font-size: 16px;
