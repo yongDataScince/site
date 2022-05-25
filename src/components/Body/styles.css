@@ -30,6 +30,15 @@
     border-radius: 50px;
 }
 
+@media (max-width: 380px) {
+    .main {
+        padding: 7px;
+    }
+    .main__block {
+        padding: 5px;
+    }
+}
+
 @media (max-width: 1024px) {
     .main__block  {
         padding: 20px;
