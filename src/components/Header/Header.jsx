@@ -1,23 +1,22 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './styles.css';
 import logo from '../../assets/g-komo.png';
 import { CoinsIcon } from '../../assets/coins';
 import { DragonIcon } from '../../assets/dragon';
 import { useOnClickOutside } from '../..';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [opened, setOpened] = useState(false);
     const refMenu = useRef(null);
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const [tabs, _setTabs] = useState([
-        {id: 0, icon: <CoinsIcon />, title: 'Token Staking'},
-        {id: 50, icon: <DragonIcon />, title: 'Token Staking'},
+        {id: 0, icon: <CoinsIcon />, title: 'Token Staking', location: '/staking'},
+        {id: 50, icon: <DragonIcon />, title: 'Token Staking', location: '/nftstaking'},
     ])
-
-    const toggleTab = (id) => {
-        setActiveTab(id)
-    }
 
     useOnClickOutside(refMenu, () => setOpened(false))
 
@@ -31,15 +30,16 @@ export const Header = () => {
             </button>
             <div className='header__tabs'>
                 {tabs.map(tab => (
-                    <div className="header__tabs-item" key={tab.id} onClick={() => toggleTab(tab.id)}>
+                    <div className={`header__tabs-item ${tab.location === location.pathname && 'active'}`} 
+                         key={tab.id} onClick={() => navigate(tab.location)}>
                         {tab.icon}
                         {tab.title}
                     </div>
                 ))}
-                <div className='header__tabs-line' style={{
+                {/* <div className='header__tabs-line' style={{
                     width: `${100 / tabs.length}%`,
                     left: `${activeTab}%`
-                }} />
+                }} /> */}
             </div>
             <button className='header__connect-button'>
                 Connect Wallet
@@ -52,8 +52,8 @@ export const Header = () => {
                         {tabs.map(tab => (
                             <p
                               key={tab.id}
-                              onClick={() => setActiveTab(tab.id)}
-                              className={`header-menu-list-item ${tab.id === activeTab && 'active'}`}>
+                              onClick={() => navigate(tab.location)}
+                              className={`header-menu-list-item ${tab.location === location.pathname && 'active'}`}>
                                 {tab.icon}
                                 {tab.title}
                             </p>
