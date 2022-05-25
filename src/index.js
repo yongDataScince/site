@@ -5,7 +5,9 @@ import App from './App';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  useLocation,
+  useNavigate
 } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -45,10 +47,22 @@ export function useOnClickOutside(ref, handler) {
   );
 }
 
+const ReNavigate = () => {
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      navigate("/staking")
+    }
+  }, [location])
+
+}
+
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <ReNavigate />
       <Routes>
         <Route path='/nftstaking' element={<App />} />
         <Route path='/staking' element={<App />} />
