@@ -233,9 +233,6 @@
     border-bottom: 1px solid #FFFFFF;
 }
 
-.main__block-portfolio-block--stake-info {
-    margin-right: 61px;
-}
 
 .main__block-portfolio-block--stake-info-title {
     font-size: 14px;
@@ -248,20 +245,25 @@
     line-height: 22px;
 }
 
+.main__block-portfolio-block--stake-info {
+    width: 190px;
+}
+
 .main__block-portfolio-block--remaining-info {
-    margin-right: 20px;
+    margin-left: 61px;
 }
 
 .main__block-portfolio-block--apy-info {
-    margin-right: 33px;
+    margin-left: 20px;
 }
 
 .main__block-portfolio-block--reward-info {
-    margin-right: auto;
+    margin-left: 33px;
 }
 
 .get-reward-btn {
     padding: 10px 25px 14px 34px;
     font-size: 16px;
     line-height: 19px;
+    margin-left: auto;
 }
