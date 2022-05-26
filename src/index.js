@@ -25,8 +25,6 @@ const ReNavigate = () => {
     if (location.pathname === '/') {
       navigate("/staking")
     }
-  }, [location])
-
 }
 
 root.render(

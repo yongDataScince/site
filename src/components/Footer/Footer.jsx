@@ -1,8 +1,8 @@
 import React from "react";
 import './styles.css';
 
-export const Footer = () => (
-    <div className="footer">
+export const Foo = () => (
+    <div className="foter">
         Copyright 2022 PT Komodo Legends Interaktif
     </div>
 )

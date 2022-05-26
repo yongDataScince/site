@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './styles.css';
+import './syles.css';
 
 const buttonsData = [
     {
@@ -40,10 +40,10 @@ const buttonsData = [
     },
 ]
 
-export const Body = () => {
+export cons Body = () => {
     const [buttons, setButtons] = useState(buttonsData);
 
-    const choiseDuration = (id) => {
+    const choiseDuration = () => {
         setButtons(buttons.map(button => {
             if (id === button.id) return {
                 ...button,
@@ -96,7 +96,7 @@ export const Body = () => {
                 <button className="main__block-stake-btn">
                     Stake Token
                 </button>
-            </div>
+
             <div className="main__block">
                 <p className="main__block-title">Portfolio</p>
                 <div className="main__block-portfolio-blocks">

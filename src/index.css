@@ -16,7 +16,7 @@ body, html, #root {
   border-radius: 15px;
   border: none;
   color: #FFFFFF;
-  background: linear-gradient(180deg, #00850D 0%, #001402 100%);
+  background: lineagradient(180deg, #00850D 0%, #001402 100%);
 }
 
 p {
